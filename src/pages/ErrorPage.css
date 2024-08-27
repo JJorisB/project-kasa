@@ -1,0 +1,53 @@
+.error-404 {
+  width: 597px;
+  height: 263px;
+  display: flex;
+}
+
+.error-page-container {
+  display: flex;
+  justify-content: center;
+  padding: 90px 0 0 0;
+  flex-wrap: wrap;
+}
+
+.error-message {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51.34px;
+  text-align: center;
+  color: #ff6060;
+  width: 100%;
+  margin: 113px 50px 139px 50px;
+}
+.home-link {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.67px;
+  text-align: center;
+  margin-bottom: 89px;
+}
+@media (max-width: 425px) {
+  .error-404 {
+    width: 198px;
+    height: 99px;
+  }
+  .error-page-container {
+    display: flex;
+    justify-content: center;
+    padding: 93px 0 0 0;
+    flex-wrap: wrap;
+  }
+  .error-message {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25.67px;
+    margin: 113px 50px 113px 50px;
+  }
+  .home-link {
+    margin-bottom: 63px;
+    width: 260px;
+  }
+}
