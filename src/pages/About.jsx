@@ -13,7 +13,7 @@ const About = () => {
           <img
             src={"/Img-about.png"}
             alt="image en fond du la page 'à propos'"
-            className="img-accueil"
+            className="img-about"
           />
         </div>
       </div>

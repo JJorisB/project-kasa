@@ -21,12 +21,20 @@ function Carrousel({ slides }) {
       {/* Si le nb d'images est > à 1 on affiche les flèches */}
       {length > 1 && (
         <p className="left-arrow" onClick={goToPrevious}>
-          <img src={"/arrow-left.png"} alt="left-arrow" />
+          <img
+            src={"/arrow-left.png"}
+            alt="left-arrow"
+            className="left-arrow-img"
+          />
         </p>
       )}
       {length > 1 && (
         <p className="right-arrow" onClick={goToNext}>
-          <img src={"/arrow-right.png"} alt="right-arrow" />
+          <img
+            src={"/arrow-right.png"}
+            alt="right-arrow"
+            className="right-arrow-img"
+          />
         </p>
       )}
       {/* Images du carrousel */}

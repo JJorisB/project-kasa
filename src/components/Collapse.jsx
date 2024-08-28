@@ -19,9 +19,12 @@ const Collapse = ({ title, content }) => {
         </h2>
         <div className="chevron">
           {isOpen ? (
-            <FontAwesomeIcon icon={faChevronUp} />
+            <FontAwesomeIcon icon={faChevronUp} className="icon-chevronup" />
           ) : (
-            <FontAwesomeIcon icon={faChevronDown} />
+            <FontAwesomeIcon
+              icon={faChevronDown}
+              className="icon-chevrondown"
+            />
           )}
         </div>
       </div>

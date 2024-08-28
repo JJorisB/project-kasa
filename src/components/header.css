@@ -25,9 +25,14 @@ body {
 .links-path {
   text-decoration: none;
   color: black;
+  text-wrap: nowrap;
 }
 a:-webkit-any-link {
   color: black;
+}
+
+.active {
+  text-decoration: underline;
 }
 
 @media (max-width: 425px) {

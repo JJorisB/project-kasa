@@ -13,3 +13,24 @@
 .rating .star-icon {
   margin-right: 15px;
 }
+
+@media (max-width: 425px) {
+  .rating-container {
+    width: 98px;
+    height: 18px;
+  }
+  .rating .star {
+    color: #ff6060;
+    font-size: 16px;
+  }
+  .rating .empty-star {
+    color: #e3e3e3;
+    font-size: 16px;
+  }
+  .rating .star-icon {
+    margin-right: 5px;
+  }
+  .svg-inline--fa {
+    height: 1em;
+  }
+}

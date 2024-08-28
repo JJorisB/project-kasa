@@ -35,3 +35,37 @@
   bottom: 10px;
   right: 48%;
 }
+
+@media (max-width: 425px) {
+  .slide-carrousel {
+    margin: 0 20px 0 20px;
+    height: 255px;
+  }
+  .left-arrow-img {
+    width: 12px;
+    height: 20px;
+  }
+  .left-arrow {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+  }
+  .right-arrow-img {
+    width: 12px;
+    height: 20px;
+  }
+  .right-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+  }
+  .slide-number {
+    right: 46%;
+  }
+  .slide-images {
+    height: 255px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+}
