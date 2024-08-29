@@ -18,6 +18,14 @@ const Logement = () => {
     return <Navigate to="/ErrorPage" />;
   }
 
+  const equipements = logement?.equipments.map((equipement, i) => {
+    return (
+      <ul key={i}>
+        <li>{equipement}</li>
+      </ul>
+    );
+  });
+
   return (
     <div>
       <Header />
@@ -27,30 +35,32 @@ const Logement = () => {
           <h2 className="title">{logement.title}</h2>
           <h3 className="location">{logement.location}</h3>
         </div>
-        <div className="host-and-picture">
-          <p className="host-name">{logement.host.name}</p>
-          <img
-            src={logement.host.picture}
-            alt="photo de l'hôte"
-            className="host-picture"
-          />
-        </div>
-        <div className="tags-and-rating">
-          <div className="tags-container">
-            {logement.tags &&
-              logement.tags.map((tag, index) => (
-                <div key={index} className="tag">
-                  {tag}
-                </div>
-              ))}
+        <div className="desc-stats">
+          <div className="host-and-picture">
+            <p className="host-name">{logement.host.name}</p>
+            <img
+              src={logement.host.picture}
+              alt="photo de l'hôte"
+              className="host-picture"
+            />
           </div>
-          <div className="rating-container">
-            <Rate rating={parseInt(logement.rating)} />
+          <div className="tags-and-rating">
+            <div className="tags-container">
+              {logement.tags &&
+                logement.tags.map((tag, index) => (
+                  <div key={index} className="tag">
+                    {tag}
+                  </div>
+                ))}
+            </div>
+            <div className="rating-container">
+              <Rate rating={parseInt(logement.rating)} />
+            </div>
           </div>
         </div>
         <div className="collapses-logement">
           <Collapse title="Description" content={logement.description} />
-          <Collapse title="Équipements" content={logement.equipments} />
+          <Collapse title="Équipements" content={equipements} />
         </div>
       </div>
 

@@ -19,18 +19,18 @@ const Collapse = ({ title, content }) => {
         </h2>
         <div className="chevron">
           {isOpen ? (
-            <FontAwesomeIcon icon={faChevronUp} className="icon-chevronup" />
-          ) : (
             <FontAwesomeIcon
               icon={faChevronDown}
               className="icon-chevrondown"
             />
+          ) : (
+            <FontAwesomeIcon icon={faChevronUp} className="icon-chevronup" />
           )}
         </div>
       </div>
       <div className="text-collapse-container">
         <div className={isOpen ? "text-collapse" : ""}>
-          <p>{isOpen && content}</p>
+          <p className="collapse-content">{isOpen && content}</p>
         </div>
       </div>
     </div>

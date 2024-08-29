@@ -12,6 +12,7 @@
 }
 .rating .star-icon {
   margin-right: 15px;
+  font-size: small;
 }
 
 @media (max-width: 425px) {
