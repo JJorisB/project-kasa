@@ -30,7 +30,7 @@ const Collapse = ({ title, content }) => {
       </div>
       <div className="text-collapse-container">
         <div className={isOpen ? "text-collapse" : ""}>
-          <p className="collapse-content">{isOpen && content}</p>
+          <div className="collapse-content">{isOpen && content}</div>
         </div>
       </div>
     </div>

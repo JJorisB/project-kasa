@@ -9,7 +9,7 @@ const About = () => {
     <div>
       <Header />
       <div className="content">
-        <div className="title-container">
+        <div className="title-about-container">
           <img
             src={"/Img-about.png"}
             alt="image en fond du la page 'à propos'"
@@ -20,7 +20,7 @@ const About = () => {
       <div className="collapse-container">
         <Collapse
           title="Fiabilité"
-          content="Les annonces postées sur Kasas garantissent une fiabilité totale.  Les photos sont conformes aux logements et toutes les informations sont régulièrement vérifiées par nos équipes."
+          content="Les annonces postées sur Kasa garantissent une fiabilité totale.  Les photos sont conformes aux logements et toutes les informations sont régulièrement vérifiées par nos équipes."
         />
         <Collapse
           title="Respect"
