@@ -2,23 +2,19 @@ import React, { useState } from "react";
 import "./Carrousel.css";
 
 function Carrousel({ slides }) {
-  const [currentIndex, setCurrentIndex] = useState(0); // Initialisation de currentIndex à 0 (état qui garde la trace de l'index de l'image actuellement affichée)
-  const length = slides.length; //Longueur du tableau
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const length = slides.length;
 
-  // fonction goToPrevious pour maj de "currentIndex" pour afficher l'image précédente
   const goToPrevious = () => {
-    setCurrentIndex(currentIndex === 0 ? length - 1 : currentIndex - 1); // Si l'index actuel est à 0 on va à la dernière page, sinon on décrémente l'index de 1
+    setCurrentIndex(currentIndex === 0 ? length - 1 : currentIndex - 1);
   };
 
-  // Fonction goToNext pour maj currentIndex pour afficher l'image suivante
   const goToNext = () => {
-    setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1); // Si l'index actuel est la dernière image on retourne à la première image, sinon on incrémente l'index de 1
+    setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1);
   };
 
-  // Rendu du composant
   return (
     <section className="slide-carrousel">
-      {/* Si le nb d'images est > à 1 on affiche les flèches */}
       {length > 1 && (
         <p className="left-arrow" onClick={goToPrevious}>
           <img
@@ -37,17 +33,12 @@ function Carrousel({ slides }) {
           />
         </p>
       )}
-      {/* Images du carrousel */}
       {slides.map((image, index) => {
         return (
-          // Pour chaque image, crée un div avec une clé unique (key={index}) et une classe slider.
           <div
             key={index}
             className={index === currentIndex ? "slider active" : "slider"}
-            // On ajoute un classe "slider" pour chaque div créee
-            // Si index est égal à currentIndex, ajout de la classe "active" pour indiquer que cette image est actuellement affichée
           >
-            {/* Affichag de l'image et du numéro de la diapositive, si l'image correspond à currentIndex */}
             {index === currentIndex && (
               <img src={image} alt="images-location" className="slide-images" />
             )}
