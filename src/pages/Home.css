@@ -33,19 +33,6 @@ h1 {
   position: absolute;
 }
 
-/*
-.container {
-  background-color: #f6f6f6;
-  border-radius: 25px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 50px 50px;
-  row-gap: 50px;
-  column-gap: 50px;
-  margin: 0 100px 0 100px;
-}*/
-
 .container {
   background-color: #f6f6f6;
   border-radius: 25px;

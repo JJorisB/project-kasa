@@ -21,7 +21,7 @@ const Home = () => {
         </div>
       </div>
       <div className="container">
-        {dataLogements.map((dataLogement, index) => (
+        {dataLogements.map((dataLogement) => (
           <div key={dataLogement.id}>
             <Link to={`/logement/${dataLogement.id}`}>
               <Card image={dataLogement.cover} title={dataLogement.title} />

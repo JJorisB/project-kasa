@@ -6,7 +6,6 @@ import Footer from "../components/Footer.jsx";
 import Collapse from "../components/Collapse.jsx";
 import Carrousel from "../components/Carrousel.jsx";
 import "./Logement.css";
-import { faStar as solidStar } from "@fortawesome/free-solid-svg-icons";
 import Rate from "../components/Rate.jsx";
 
 const Logement = () => {
